@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CS193X Flexbox review</title>
+    <style>body {
+        margin: 0;
+      }
+      
+      a {
+        font-weight: bold;
+        font-size: 24px;
+        background-color: tomato;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 50px;
+        margin: 10px;
+      }
+      #split{
+        margin:auto;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+        background-color: whitesmoke;
+        font-family: Helvetica, sans-serif;
+        height: 100px;
+      }</style>
+  </head>
+  <body>
+    <nav>
+      <a>Home</a>
+      <a>About</a>
+      <a>News</a>
+      <a>Links</a>
+      <a id="split">Contact</a>
+    </nav>
+  </body>
+</html>

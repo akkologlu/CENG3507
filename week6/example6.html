@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox example</title>
+    <style>
+        .section {
+  height: 200px;
+  background-color: green;
+  margin: 20px;
+}
+
+#flex-container {
+  display: flex;
+  border: 2px solid black;
+  padding: 20px;
+  height: 200px;
+  margin: 20px;
+}
+
+.flex-item {
+  border-radius: 10px;
+  background-color: purple;
+  margin: 2px;
+  width: 50px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="section"></div>
+    <div id="flex-container">
+      <div class="flex-item"> one </div>
+      <div class="flex-item special">two</div>
+      <div class="flex-item">three</div>
+      <span class="flex-item">one two three four five</span>
+    </div>
+  </body>
+</html>
