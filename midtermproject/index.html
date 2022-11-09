@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <style>
+        #page{/* #page covers the whole page.*/
+            margin-left: 15%;
+            margin-right: 15%;   
+            height: auto;
+            background-color: #EDEDED;
+        }
+        #header{/* #header covers the header part.*/
+            border: 3px solid black;
+            display: flex;
+            margin-top: 0.5%;
+        }
+        #money_logo {/* #money_logo specifies the div where the money bag is located. */
+            flex: 1;
+            text-align: right;
+        }
+        #money_img{/* #money_img is for money bag picture*/
+            width: 50%;
+            margin-right: 5%; 
+        }
+        #slogan {/* #slogan is for the slogan part on the right.*/
+            flex: 1;
+            text-align: center;
+            font-size:calc(1rem + .75vw);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+            margin-top: 3%;
+            color: blue;
+        }
+        #bank_logo {/* #bank_logo specifies the div where the bank building is located.*/
+            border-bottom-style: none;
+            border-top-style: none;
+            flex: 1;
+        }
+        #bank_img {/* #bank_img is for bank building picture*/
+            width: 50%;
+            padding-top: 5%;
+        }
+        #header_text {/* #header_text for the text that says Cheap Currency.*/
+            flex: 3;
+            text-align: center;
+            font-size:calc(1rem + .75vw);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #body{/* #body covers the whole body part.*/
+            display: flex;
+        }
+        #left_body {/* #left_body covers the left part of body.*/
+            border: 3px solid black;
+            border-top-style:none;
+            border-bottom-style:none;
+            padding-top: 5%;
+            flex:2;
+            flex-direction: column;
+            justify-content: space-between;
+            width: auto;
+        }
+        .left_borders{/* .left_borders for borders with currency values on the left side of the body.*/
+            display: flex;
+            align-items: center;
+            border: 3px solid black;
+            margin: 15%;
+            flex-direction: row;
+            border-radius: 130px;
+            padding-left: 5%;
+        }
+        .left_borders_img {/* .left_borders_img for pictures of currency values on the left side of the body.*/
+            padding-top: 2%;
+            width: 30%;
+            padding-right: 8%;
+        }
+        .prices {/* .prices for currency value texts*/
+            text-align: center;
+            font-size:calc(0.75rem + .75vw);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        #center_body {/* #center_body covers the center part of body.*/
+            flex:3;
+        }
+        h1{/* h1 is for news headlines on the center body.*/
+            font-size:calc(1rem + .75vw);
+            text-align: left;
+            padding-left: 10%;
+            padding-right: 3%;
+        }
+        article {/* article is for news contents on the center body.*/
+            padding-left: 10%; 
+            padding-right:15%;
+            
+        }
+        #right_body {/* #right_body covers the right part of body.*/
+            border: 3px solid black;
+            border-top-style:none;
+            border-bottom-style:none;
+            display: flex;
+            flex-direction: column;
+            flex:2;
+            padding-top: 3%;
+        }
+       .right_borders {/* .right_borders for borders on the right part of body.*/
+            border: 3px solid black;
+            margin: 15%;
+            margin-top:0%;
+            border-radius: 30px;
+            background-color: #fd8585;
+        }
+        
+        .previous_transactions_borders{/* .previous_transactions is for borders inside the "Previous Transactions" part.*/
+            border: 3px solid black;
+            flex: 1;
+            margin: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: white;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 30px;
+        }
+        #footer{/* .footer covers the whole footer part.*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom:0% ;
+        }
+        .footer_borders{/* .footer_borders is for all borders on the footer.*/
+            margin-top: 2%;
+            width: 20%;
+            border: 3px solid black;
+            border-radius: 5%;
+            padding-left: 3%;
+            font-size:calc(1rem + .75vw);
+        }
+    </style>
+</head>
+<body>
+    <div id="page"> <!-- For rules that concern the whole page.-->
+        <div style="height: 3%;"><!-- Blue stripe at the top of the page.-->
+            <hr style="background-color: rgb(6, 255, 255); height: 100%;">
+        </div>
+        <div id="header"><!-- The header part-->
+            <div id="money_logo" ><img src="https://www.pinclipart.com/picdir/big/12-125586_money-bag-clipart-money-bag-clip-library-download.png"id="money_img" ></div>
+            <div id="slogan"> Cheap<br>Currency</div>
+            <div id="bank_logo"> <img src="http://cdn.onlinewebfonts.com/svg/img_454375.png"id="bank_img"></div>
+            <div id="header_text"><p style=" padding-right: 15%;padding-left: 15%;">Money is your time, time is our money.</p></div>
+        </div>
+        <div id="body"><!--I divided the body part into three sections in the form of wide columns.(Flex:2-3-2)-->
+            <div id="left_body"><!--The left part of the body that makes up 2 out of 7.-->
+                <div class="left_borders" style="background-color:rgb(250, 150, 150)">
+                    <div class="left_borders_img"><img src="https://www.freeiconspng.com/thumbs/euro-icon-png/euro-icon-8.png" width="100%"></div>
+                    <div><p class="prices">18,44 TL</p></div>
+                </div>
+                <div class="left_borders" style="background-color:rgb(133, 250, 129)">
+                    <div class="left_borders_img"><img src="http://cdn.onlinewebfonts.com/svg/img_60971.png" width="100%"></div>
+                    <div><p class="prices">18,62 TL</p></div>
+                </div>
+                <div class="left_borders" style="background-color:rgb(148, 146, 255)">
+                    <div class="left_borders_img"><img src="http://cdn.onlinewebfonts.com/svg/img_457369.png" width="100%"></div>
+                    <div><p class="prices">21,39 TL</p></div>
+                </div>
+                <div class="left_borders" style="background-color:rgb(229, 252, 129)">
+                    <div class="left_borders_img"><img src="https://cdn-icons-png.flaticon.com/512/20/20958.png" width="100%"></div>
+                    <div><p class="prices">0,13 TL</p></div>
+                </div>
+                <div class="left_borders" style="background-color: rgb(131, 255, 255);">
+                    <div class="left_borders_img"><img src="https://cdn-icons-png.flaticon.com/512/4484/4484747.png"width="100%"></div>
+                    <div><p class="prices">18,63 TL</p></div>
+                </div>
+                <div class="left_borders" style="background-color:rgb(255, 240, 158)">
+                    <div class="left_borders_img"><img src="http://cdn.onlinewebfonts.com/svg/img_456726.png" width="100%"></div>
+                    <div><p class="prices">0,30 TL</p></div>
+                </div>
+            </div>
+            <div id="center_body"><!--The middle part of the body that makes up 3 out of 7.-->
+                <div><h1 style="padding: 5%;text-align: center;">BREAKING NEWS</h1></div>
+                <hr style="background-color: black;height: 1px;">
+                <div><h1>G7 leaders pledge to ban or phase out Russian oil imports </h1><article>Leaders from the Group of Seven developed democracies pledged Sunday to phase out or ban the import of Russian oil. They made the promise as they met with Ukraine's President Volodymyr Zelenskyy, to stress their support and to display unity among Western allies on Victory in Europe Day, which marks Nazi Germany’s surrender in 1945.</article></div>
+                <div><h1>IMF reduces global growth forecast amid inflation and supply problems</h1><article>The International Monetary Fund (IMF) has cut its 2021 growth forecasts for advanced economies, particularly the United States, Japan, and Germany. It is blaming lingering health risks, problems in supply chains and high inflation.</article></div>
+                <div><h1>World economy on 'firmer footing' but 'debt and inequality pose risks'</h1><article>The world economy is on "a firmer footing" thanks to the accelerated pace of vaccination and strong fiscal stimulus programmes, but growing inequality, high debt and divergences between wealthy and low-income countries remain important risks, Kristalina Georgieva, the managing director of the International Monetary Fund (IMF), has warned.</article></div>
+                <div style="width: 18%; height:20%;margin-left: 75%;margin-top: 10%;"><img src="https://www.freeiconspng.com/thumbs/check-tick-icon/black-check-tick-icon-4.png" width="70%"></div>
+            </div>
+            <div id="right_body"><!--The right part of the body that makes up 2 out of 7.-->
+                <div class="right_borders"><!--The section on the top right where personal information and account information is written.-->
+                    <div style="margin-left: 10%; margin-top: 10%;">
+                        <img src="https://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png" width="20%">
+                    </div>
+                    <div style="width: 80%;border: 3px solid black;margin-left: 10%;border-radius: 10%;margin-bottom: 5%;background-color: #FFC1C1;">
+                        <h1 style="font-size:calc(0.5rem + .75vw);;text-align: center;padding-top: 10%;padding-bottom: 5%;">AHMET CAN</h1>
+                        <p style="text-align: center;font-size:calc(0.25rem + .75vw);">Checking Account<br>Credit Rating: 1800<br>Bank Debt: 1000 TL</p>
+                    </div>
+                </div>
+                <div class="right_borders" style="background-color: #9efd8f;"><!--The part where the balance information is written in the right middle.-->
+                    <div style="border: 3px solid black;border-radius:10% ;margin:5%;margin-bottom:0%;font-size:calc(1rem + .75vw);text-align: center;background-color: #A9FF9C;">13.000 TL</div>
+                    <div style="width: 100%;position: relative;left: 10%;">
+                    <img src="https://i.pinimg.com/originals/98/4d/d7/984dd7865d06ed7186f77236ae88c3ad.png" width="80%"></div>
+                </div>
+                <!--The previous transaction section at the bottom right.-->
+                <p style="text-align: center;font-size:calc(0.75rem + .75vw);margin-bottom: 2%;font-weight: bold;">Previous Transactions</p>
+                <div class="right_borders" style="background-color: #a0a0fd;">
+                    <div class="previous_transactions_borders"><p style="color:green;">+1000 TL</p></div>
+                    <div class="previous_transactions_borders"><p style="color:red;">-700 TL</p></div>
+                    <div class="previous_transactions_borders"><p style="color:green;">+1238 TL</p></div>
+                    <div class="previous_transactions_borders"><p style="color:red;">-743 TL</p></div>
+                </div>
+            </div>
+        </div>
+        <div style=" border: 3px solid black;">
+            <div id="footer"><!--The footer part.-->
+                <div class="footer_borders">
+                    <p>About Us</p>
+                    <p style="color: grey;font-size:calc(0.7rem + .75vw);">Community<br>Privacy<br>Business Contacts</p>
+                </div>
+                <div class="footer_borders">
+                    <p>Products</p>
+                    <p style="color: grey;font-size:calc(0.7rem + .75vw);">Exchange<br>Academy<br>Credit Application</p>
+                </div>
+                <div class="footer_borders">
+                    <p>Support</p>
+                    <p style="color: grey;font-size:calc(0.7rem + .75vw);">Give Us Feedback<br>APIs<br>Trading Rules</p>
+                </div>
+            </div>
+            <p style="text-align: center;font-size: x-large;">@2023 CENG BANK COPYRIGHT</p>
+        </div>
+    </div>
+</body>
+</html>
